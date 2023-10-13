@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<title>My start-up website</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Young+Serif&display=swap');
+  </style>
+<style>
+  article{
+    height: 450px;
+  }
+</style>
+</head>
+
+<body>
+
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="Aboutme.html">About Me</a>
+    <a href="mijnopleiding.html">My Study</a>
+    <a href="vakken.html">Subjects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button> 
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+
+  <div class="container">
+    <header>
+        <h1>My Subjects</h1>
+    </header>
+    <section>
+      <div class="test">
+      <div id="mySidenav" class="sidenav">
+      <a href="./vakken/BS.html" id="burgerschap">Burgerschap</a>
+      <a href="./vakken/Engels.html" id="engels">Engels</a>
+      <a href="./vakken/GIT.html" id="git">GIT</a>
+      <a href="./vakken/Greenfoot.html" id="greenfoot">Greenfoot</a>
+      <a href="./vakken/htcs.html" id="htcs">HTML/CSS</a>
+      <a href="./vakken/IPFS.html" id="ipfs">IPFS</a>
+      <a href="./vakken/JS.html" id="js">javascript</a>
+      <a href="./vakken/NL.html" id="nl">Nederlands</a>
+    </div>        
+  </div>
+      <article style="width: 100%; height: 550px;">
+        <p>Choose a subject from the menu on the right to get information about that subject.</p>
+      </article>
+    </section>
+    <footer></footer>
+  </div>
+
+
+</body>
+</html>

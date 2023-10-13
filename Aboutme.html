@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<title>My start-up website</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Young+Serif&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="Aboutme.html">About Me</a>
+    <a href="mijnopleiding.html">My Study</a>
+    <a href="vakken.html">Subjects</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button> 
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+
+    <div class="container">
+    <header>
+        <h1>About me</h1>
+    </header>
+    
+    <section>
+      <article style="width: 100%;">
+        <button class="accordion">Personal Information</button>
+<div class="panel">
+  <img src="./images/Schermafbeelding 2022-03-28 om 09.30.10.png"><p>My name is Melissa.</p>
+  <p>I'm a seventeen year old Software Development student.</p>
+  <p>i really love building websites, because I can use my creativity and create something original</p>
+  <p>I became an officially published author when I was fourteen and published my first book!</p>
+  </div>
+
+<button class="accordion">My Hobby's</button>
+<div class="panel">
+<p>One of my favourite hobby's, and something that sort of became part of me, is one of my sports. Survivalrunning.</p>
+<p>If you want to get an impression from what survialrunning is and why I love it so much, you should defenitely watch the video!</p>
+<center>
+  <video width="320" height="240" controls>
+    <source src="./images/Survivalrunede.ogg" type="video/ogg">
+  </video>
+</center>
+<br>
+<p>Then on to my next hobby, Speedcubing!</p>
+<p>Speedcubing is solving a rubiks cube, but not the original one but a speedcube, as fast as you can.</p>
+<p>You also need to learn a real lot of algorithms if you want to get even faster.</p>
+<p>For the advanced method called CFOP, you have to memorize about 57 different algorithms.</p>
+<p>CFOP stands for: Cross, First two layers, Orient last layer, Permute last layer.</p>
+<center>
+  <video width="320" height="240" controls>
+    <source src="./images/speedcubing.ogg" type="video/ogg">
+  </video>
+</center>
+<br><br>
+<p>These are out of all my hobby's, my favourite and the things I do most of the time!</p>
+</div>
+
+<button class="accordion">My Favourite things</button>
+<div class="panel">
+  <p>Okay, let's start with my favourite TV-show! Like, I'm litterally obsessed haha</p>
+  <p>Right here you can see a part of my favourite TV-show, Flikken Maastricht.</p>
+  <p>This part is from Season 13 Episode 13</p>
+  <center>
+    <video width="320" height="240" controls>
+      <source src="./images/FM.ogg" type="video/ogg">
+    </video>
+  </center>
+  <br>
+  <br>
+  <p>And then, last but not least... my favourite game.</p>
+  <center>
+    <video width="320" height="240" controls>
+      <source src="./images/sims4.ogg" type="video/ogg">
+    </video>
+  </center>
+  <p>It's The Sims 4! This is by far my most played game, because I get the opportunity to play in the world I want.</p>
+  <p>And having a game to just distract my thoughts, is just a really nice thing! It's also some kind of therapy for me.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+     </article>
+    </section>
+    <footer></footer>
+  </div>
+
+
+</body>
+</html>

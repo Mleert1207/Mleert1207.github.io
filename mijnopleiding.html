@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<title>My start-up website</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Young+Serif&display=swap');
+  </style>
+<style>
+  article {
+    height: 450px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="Aboutme.html">About Me</a>
+    <a href="mijnopleiding.html">My Study</a>
+    <a href="vakken.html">Subjects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button> 
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+
+  <div class="container">
+    <header>
+        <h1>My Study</h1>
+    </header>
+    <section>
+      <article style="width: 100%;">
+        <p>When you choose for the study Software Development, you'll learn how to build a website and how a website works.</p>
+        <p>You'll also learn how to build small games using java and strengthen your teamwork skills.</p>
+        <p>If you choose for this study, you need the strength to keep going and not giving up. You also gotta practise a lot.</p>
+      </article>
+    </section>
+    <footer></footer>
+  </div>
+
+
+</body>
+</html>

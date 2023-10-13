@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<title>My start-up website</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Young+Serif&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+    <a href="../Aboutme.html">About Me</a>
+    <a href="../mijnopleiding.html">My Study</a>
+    <a href="../vakken.html">Subjects</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button> 
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+  <div class="container">
+    <header>
+        <h1>Greenfoot</h1>
+    </header>
+    <section>
+      <div class="test">
+        <div id="mySidenav" class="sidenav">
+        <a href="BS.html" id="burgerschap">Burgerschap</a>
+        <a href="Engels.html" id="engels">Engels</a>
+        <a href="GIT.html" id="git">GIT</a>
+        <a href="Greenfoot.html" id="greenfoot">Greenfoot</a>
+        <a href="htcs.html" id="htcs">HTML/CSS</a>
+        <a href="IPFS.html" id="ipfs">IPFS</a>
+        <a href="JS.html" id="js">javascript</a>
+        <a href="NL.html" id="nl">Nederlands</a>
+      </div>          
+      <article style="width: 100%; height: 550px;">
+        <p>Bij greenfoot leer je programmeren Java door middel van het bouwen van simpele games.</p>
+        <p>Ook kun je er je eigen creativiteit in kwijt</p>
+      </article>
+    </section>
+    <footer></footer>
+  </div>
+
+
+</body>
+</html>
+
+          
